@@ -4,10 +4,7 @@
     {
       "label": "Iniciar Grademe",
       "type": "shell",
-      "command": "make",
-      "options": {
-        "cwd": "/workspaces/grademe-local"
-      },
+      "command": "if [ ! -d /workspaces/grademe-local ]; then git clone https://github.com/Sayouti1/grademe.git /workspaces/grademe-local; fi; cd /workspaces/grademe-local && make",
       "presentation": {
         "reveal": "always",
         "panel": "new"
